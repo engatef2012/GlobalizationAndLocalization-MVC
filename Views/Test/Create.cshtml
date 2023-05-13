@@ -2,9 +2,11 @@
 @using Microsoft.AspNetCore.Mvc.Localization
 @inject IViewLocalizer localizer
 <form method="post" asp-action="Create">
-    <div class="col-6">
-        <label asp-for="Name"></label>
-        <input type="text" asp-for="Name"  class="form-control"/>    
-        <button type="submit">@localizer["Save"]</button>
+    <div class="row justify-content-center">
+        <div class="col-6">
+        <label asp-for="Name" class="mb-1"></label>
+        <input type="text" asp-for="Name"  class="form-control mb-2"/>    
+        <button type="submit" class="btn btn-primary">@localizer["Save"]</button>
+    </div>
     </div>
 </form>
